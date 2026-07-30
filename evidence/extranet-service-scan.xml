@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Tue Jul 28 11:25:54 2026 as: /usr/lib/nmap/nmap -sS -sV -sC -p80,443,8080,8443,22,21,25,110,143,993,995 -T4 -oA evidence/extranet-service-scan 185.161.45.103 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -sS -sV -sC -p80,443,8080,8443,22,21,25,110,143,993,995 -T4 -oA evidence/extranet-service-scan 185.161.45.103" start="1785227154" startstr="Tue Jul 28 11:25:54 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="11" services="21-22,25,80,110,143,443,993,995,8080,8443"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="185.161.45.103" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1785227154" endtime="1785227177"><status state="up" reason="echo-reply" reason_ttl="55"/>
+<address addr="185.161.45.103" addrtype="ipv4"/>
+<hostnames>
+<hostname name="proxiad-infra.dedie.ate.info" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service><script id="http-title" output="Did not follow redirect to https://proxiad-infra.dedie.ate.info:/"><elem key="redirect_url">https://proxiad-infra.dedie.ate.info:/</elem>
+</script></port>
+<port protocol="tcp" portid="110"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="pop3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="143"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="imap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="54"/><service name="http" product="nginx" version="1.28.0" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.28.0</cpe></service><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1&#xa;  http/1.0&#xa;  http/0.9"><elem>h2</elem>
+<elem>http/1.1</elem>
+<elem>http/1.0</elem>
+<elem>http/0.9</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-server-header" output="nginx/1.28.0"><elem>nginx/1.28.0</elem>
+</script><script id="ssl-cert" output="Subject: commonName=*.proxiad.com&#xa;Subject Alternative Name: DNS:*.proxiad.com, DNS:proxiad.com&#xa;Not valid before: 2026-07-20T00:00:00&#xa;Not valid after:  2027-02-03T23:59:59"><table key="subject">
+<elem key="commonName">*.proxiad.com</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">GandiCert</elem>
+<elem key="countryName">FR</elem>
+<elem key="organizationName">Gandi SAS</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">4096</elem>
+<elem key="modulus">C6B7DE095DF64CB7C467B2C12347000483D499CE3B1D3A95D808987A5D37714E211D194DE8A59889FAEBD3DC7A579E86CF25CEB6BF4358470CB6BFB1CC26779DA0C063C3BAC6C6D7A297F0ACD6065FEB1E68570B741F6D3D136E293B2119EED3C59F1027961FE948918DDE4CC7EC82C2CFDC9B171DF4713F9D00BB9AD4FB3B17EDCD4DBB579BB0AB28AFC96BF3809F37E004100E386E27F49FFE95955F27272A0F9FE3A08F8E2A01CA582AA7EDFE1A8D93BF497FCB489B054E8D833BCB56F48C192B2F794C1FB29D6021B6D48F695A10F704193854B846346440AF787EB22EE026FE33EA670FB0580ED0C0EFC369FF5DC990962ED8D905E285EC68B600327F0072112709A13E3C8016181CC6E15410100281A36EA7A117C310CFA79C26FC2900518D6014DBCC75FDEF8873EE977FC65A86AE5C7616E1990F89508A32B6D9D23D97A484DE268FE6BD555BDE34B5CB863ED90ED050362BD5D6F84BFC6124DBF353B5C1AF66FFC3751D56EC0AAB27FB0D14166AB4557194C5B2556A2A8BF5748E817AB00D00522DCD9AFF830A73C145C3769BF8C024FB23E3F386B849B8659C765AA45748A106F3D7DF5D2CA230D7459E6A02C6B51AB0664FF795CDE482163736164054126FAE9B304B414A53893574D8FE20C2F0D320774C2F56710D8EB3BBC7F32BD554E1EDFB11A74E15B56CCB0494B1A810D0B778D91CFA47E8222ACC13BF33</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">BA:BB:46:88:45:EC:DD:5A:2B:18:C5:D1:4E:EC:E3:3C:06:52:53:AC</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">A9:76:BB:D1:C2:02:2A:F1:A2:B8:8E:D1:4F:C1:DD:ED:24:97:85:E5</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.proxiad.com, DNS:proxiad.com</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1&#xa;  CPS: http://www.digicert.com/CPS</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://crl3.digicert.com/GandiCert.crl&#xa;&#xa;Full Name:&#xa;  URI:http://crl4.digicert.com/GandiCert.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://ocsp.digicert.com&#xa;CA Issuers - URI:http://cacerts.digicert.com/GandiCert.crt</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 4C:63:DC:98:E5:9C:1D:AB:88:F6:1E:8A:3D:DE:AE:8F:&#xa;                AB:44:A3:37:7B:5F:9B:94:C3:FB:A1:9C:FC:C1:BE:26&#xa;    Timestamp : Jul 20 07:54:00.180 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:10:67:44:DC:63:4D:79:6E:4C:55:75:E7:&#xa;                D3:63:89:60:5A:FC:03:60:FC:7F:5B:D8:9E:34:0E:84:&#xa;                46:F5:D0:0E:02:20:29:6A:E8:92:A4:C5:96:C5:DB:68:&#xa;                B4:0D:93:6A:80:68:81:02:90:CE:5C:0B:AD:25:01:CE:&#xa;                A6:32:F9:8D:7A:F4&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : D6:D5:8D:A9:D0:17:53:F3:6A:4A:A0:C7:57:49:02:AF:&#xa;                EB:C7:DC:2C:D3:8C:D9:F7:64:C8:0C:89:19:1E:9F:02&#xa;    Timestamp : Jul 20 07:54:00.148 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:75:00:63:C4:FE:48:52:37:AF:6E:88:F3:&#xa;                EE:E0:71:AE:B4:7F:8A:F9:DE:1E:70:F5:7F:41:D5:D1:&#xa;                4A:CB:F6:BC:02:21:00:D5:5F:17:2B:D9:FE:C4:85:7D:&#xa;                C7:2F:7E:18:95:49:51:56:28:BB:12:4A:8B:6E:CB:5C:&#xa;                AC:88:2C:B6:D7:3C:81&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 1C:9F:68:2C:E9:FA:F0:45:69:50:F8:1B:96:8A:87:DD:&#xa;                DB:32:10:D8:4C:E6:C8:B2:E3:82:52:4A:C4:CF:59:9F&#xa;    Timestamp : Jul 20 07:54:00.314 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:2C:CF:83:CA:03:49:91:D5:00:BB:EB:EC:&#xa;                DD:CB:12:CF:2C:65:C6:46:BA:73:EF:46:98:50:BF:EC:&#xa;                71:26:CE:AA:02:21:00:EF:A9:D8:19:50:2E:6E:1F:3F:&#xa;                F1:5B:78:9C:A5:21:43:0A:F5:CD:DE:40:C4:A1:CD:45:&#xa;                B2:CB:D9:CB:AC:15:ED</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-07-20T00:00:00</elem>
+<elem key="notAfter">2027-02-03T23:59:59</elem>
+</table>
+<elem key="md5">8d531dd1c5f7e7324215ec911013bbca</elem>
+<elem key="sha1">8187ad73400ff2b673fce5546823c1f2394c7f5b</elem>
+<elem key="sha256">4443a3bde5e3bf75215ef930a0f7f426671d76f7c776b7e0d06317886831447c</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIIDDCCBfSgAwIBAgIQCJswTsbxV7m5YIUyRGJd0TANBgkqhkiG9w0BAQsFADA1&#xa;MQswCQYDVQQGEwJGUjESMBAGA1UEChMJR2FuZGkgU0FTMRIwEAYDVQQDEwlHYW5k&#xa;aUNlcnQwHhcNMjYwNzIwMDAwMDAwWhcNMjcwMjAzMjM1OTU5WjAYMRYwFAYDVQQD&#xa;DA0qLnByb3hpYWQuY29tMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA&#xa;xrfeCV32TLfEZ7LBI0cABIPUmc47HTqV2AiYel03cU4hHRlN6KWYifrr09x6V56G&#xa;zyXOtr9DWEcMtr+xzCZ3naDAY8O6xsbXopfwrNYGX+seaFcLdB9tPRNuKTshGe7T&#xa;xZ8QJ5Yf6UiRjd5Mx+yCws/cmxcd9HE/nQC7mtT7OxftzU27V5uwqyivyWvzgJ83&#xa;4AQQDjhuJ/Sf/pWVXycnKg+f46CPjioBylgqp+3+Go2Tv0l/y0ibBU6NgzvLVvSM&#xa;GSsveUwfsp1gIbbUj2laEPcEGThUuEY0ZECveH6yLuAm/jPqZw+wWA7QwO/Daf9d&#xa;yZCWLtjZBeKF7Gi2ADJ/AHIRJwmhPjyAFhgcxuFUEBACgaNup6EXwxDPp5wm/CkA&#xa;UY1gFNvMdf3viHPul3/GWoauXHYW4ZkPiVCKMrbZ0j2XpITeJo/mvVVb3jS1y4Y+&#xa;2Q7QUDYr1db4S/xhJNvzU7XBr2b/w3UdVuwKqyf7DRQWarRVcZTFslVqKov1dI6B&#xa;erANAFItzZr/gwpzwUXDdpv4wCT7I+PzhrhJuGWcdlqkV0ihBvPX310sojDXRZ5q&#xa;Asa1GrBmT/eVzeSCFjc2FkBUEm+umzBLQUpTiTV02P4gwvDTIHdML1ZxDY6zu8fz&#xa;K9VU4e37EadOFbVsywSUsagQ0Ld42Rz6R+giKswTvzMCAwEAAaOCAzMwggMvMB8G&#xa;A1UdIwQYMBaAFLq7RohF7N1aKxjF0U7s4zwGUlOsMB0GA1UdDgQWBBSpdrvRwgIq&#xa;8aK4jtFPwd3tJJeF5TAlBgNVHREEHjAcgg0qLnByb3hpYWQuY29tggtwcm94aWFk&#xa;LmNvbTA+BgNVHSAENzA1MDMGBmeBDAECATApMCcGCCsGAQUFBwIBFhtodHRwOi8v&#xa;d3d3LmRpZ2ljZXJ0LmNvbS9DUFMwDgYDVR0PAQH/BAQDAgWgMBMGA1UdJQQMMAoG&#xa;CCsGAQUFBwMBMGUGA1UdHwReMFwwLKAqoCiGJmh0dHA6Ly9jcmwzLmRpZ2ljZXJ0&#xa;LmNvbS9HYW5kaUNlcnQuY3JsMCygKqAohiZodHRwOi8vY3JsNC5kaWdpY2VydC5j&#xa;b20vR2FuZGlDZXJ0LmNybDBrBggrBgEFBQcBAQRfMF0wJAYIKwYBBQUHMAGGGGh0&#xa;dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTA1BggrBgEFBQcwAoYpaHR0cDovL2NhY2Vy&#xa;dHMuZGlnaWNlcnQuY29tL0dhbmRpQ2VydC5jcnQwDAYDVR0TAQH/BAIwADCCAX0G&#xa;CisGAQQB1nkCBAIEggFtBIIBaQFnAHUATGPcmOWcHauI9h6KPd6uj6tEozd7X5uU&#xa;w/uhnPzBviYAAAGffoR+dAAABAMARjBEAiAQZ0TcY015bkxVdefTY4lgWvwDYPx/&#xa;W9ieNA6ERvXQDgIgKWrokqTFlsXbaLQNk2qAaIECkM5cC60lAc6mMvmNevQAdgDW&#xa;1Y2p0BdT82pKoMdXSQKv68fcLNOM2fdkyAyJGR6fAgAAAZ9+hH5UAAAEAwBHMEUC&#xa;IHUAY8T+SFI3r26I8+7gca60f4r53h5w9X9B1dFKy/a8AiEA1V8XK9n+xIV9xy9+&#xa;GJVJUVYouxJKi27LXKyILLbXPIEAdgAcn2gs6frwRWlQ+BuWiofd2zIQ2EzmyLLj&#xa;glJKxM9ZnwAAAZ9+hH76AAAEAwBHMEUCICzPg8oDSZHVALvr7N3LEs8sZcZGunPv&#xa;RphQv+xxJs6qAiEA76nYGVAubh8/8Vt4nKUhQwr1zd5AxKHNRbLL2cusFe0wDQYJ&#xa;KoZIhvcNAQELBQADggIBAGPq8r/VdnncWS7Boah/KzAT8fj+dEQ2nhDNhevNrPrf&#xa;amgEzZog7uBqjcieA+/JbuoLpug9YP5HY1ckiEndX0PQcq20P0XIq4ezaqMb5TP0&#xa;/qnhQu1pV8zCqaFBpO0ErsJQrBqfBW87ehXdsZALnGQCWfm9Fr9BJYvml/im9ObE&#xa;qZzqIS0Z++nq0RePFhsyM2dzmOwYA/r8a+TvRtyAnModaKs7Xglqtsa6D01qk734&#xa;UVKi1dagr18ZaUai96557haIEva6k0vcgDggB85TzHtysHHlm+vPcJ0rStJMvGzt&#xa;y14yg/c0ULxd0d/YVwJNiV81/sYDquS8R5c07tO3nJXXbcePt3aVBo/oPmsEuXc4&#xa;FZiIqub5Zx1+sFap1ZnqrBejg/wBizAkG/FI6HrFD/flUO4IOH0maWQwP/ANSVlk&#xa;QZE0Onh83+KMB7qVUGLFwZyyqfzxYo8uFsrLhtqtoZoIa8AYexUp+MMeGou34dUn&#xa;VrSSdTBjI0XlrVOYqNwSTPoXXyl+dg/JXwp1PxMB/LmXvPRPj1lY2xhT0GsznFyx&#xa;qJbhqoNiiJp0ZaUvepOsR4HZFyIMF6PdX4cqkfEciKAcZdyeyKAiYihlgOXpE0zp&#xa;VcfRLXpHCJpoiFEEvMd+xaPphF6sAww0w0+5+USdIIBptqy19z23AOv0A7G2BUBs&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html;charset=UTF-8)."></script></port>
+<port protocol="tcp" portid="993"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="imaps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="995"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="pop3s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http-proxy" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https-alt" method="table" conf="3"/></port>
+</ports>
+<times srtt="95012" rttvar="59038" to="331164"/>
+</host>
+<runstats><finished time="1785227177" timestr="Tue Jul 28 11:26:17 2026" summary="Nmap done at Tue Jul 28 11:26:17 2026; 1 IP address (1 host up) scanned in 23.35 seconds" elapsed="23.35" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

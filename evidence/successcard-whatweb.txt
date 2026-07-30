@@ -1,0 +1,384 @@
+WhatWeb report for https://successcard.proxiad.com
+Status    : 302 Found
+Title     : <None>
+IP        : <Unknown>
+Country   : <Unknown>
+
+Summary   : Cookies[JSESSIONID,XSRF-TOKEN], HTTPServer[nginx/1.28.0], HttpOnly[JSESSIONID], Java, nginx[1.28.0], RedirectLocation[https://successcard.proxiad.com/oauth2/authorization/azure], Strict-Transport-Security[max-age=31536000 ; includeSubDomains], UncommonHeaders[x-content-type-options], X-Frame-Options[DENY], X-XSS-Protection[0]
+
+Detected Plugins:
+[ Cookies ]
+	Display the names of cookies in the HTTP headers. The 
+	values are not returned to save on space. 
+
+	String       : JSESSIONID
+	String       : XSRF-TOKEN
+
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to 
+	identify the operating system from the server header. 
+
+	String       : nginx/1.28.0 (from server string)
+
+[ HttpOnly ]
+	If the HttpOnly flag is included in the HTTP set-cookie 
+	response header and the browser supports it then the cookie 
+	cannot be accessed through client side script - More Info: 
+	http://en.wikipedia.org/wiki/HTTP_cookie 
+
+	String       : JSESSIONID
+
+[ Java ]
+	Java allows you to play online games, chat with people 
+	around the world, calculate your mortgage interest, and 
+	view images in 3D, just to name a few. It's also integral 
+	to the intranet applications and other e-business solutions 
+	that are the foundation of corporate computing. 
+
+	Website     : http://www.java.com/
+
+[ RedirectLocation ]
+	HTTP Server string location. used with http-status 301 and 
+	302 
+
+	String       : https://successcard.proxiad.com/oauth2/authorization/azure (from location)
+
+[ Strict-Transport-Security ]
+	Strict-Transport-Security is an HTTP header that restricts 
+	a web browser from accessing a website without the security 
+	of the HTTPS protocol. 
+
+	String       : max-age=31536000 ; includeSubDomains
+
+[ UncommonHeaders ]
+	Uncommon HTTP server headers. The blacklist includes all 
+	the standard headers and many non standard but common ones. 
+	Interesting but fairly common headers should have their own 
+	plugins, eg. x-powered-by, server and x-aspnet-version. 
+	Info about headers can be found at www.http-stats.com 
+
+	String       : x-content-type-options (from headers)
+
+[ X-Frame-Options ]
+	This plugin retrieves the X-Frame-Options value from the 
+	HTTP header. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc288472%28VS.85%29.
+	aspx
+
+	String       : DENY
+
+[ X-XSS-Protection ]
+	This plugin retrieves the X-XSS-Protection value from the 
+	HTTP header. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc288472%28VS.85%29.
+	aspx
+
+	String       : 0
+
+[ nginx ]
+	Nginx (Engine-X) is a free, open-source, high-performance 
+	HTTP server and reverse proxy, as well as an IMAP/POP3 
+	proxy server. 
+
+	Version      : 1.28.0
+	Website     : http://nginx.net/
+
+HTTP Headers:
+	HTTP/1.1 302 
+	Server: nginx/1.28.0
+	Date: Tue, 28 Jul 2026 07:25:35 GMT
+	Content-Length: 0
+	Connection: close
+	Set-Cookie: JSESSIONID=21222FFBC9B42366F9FF2258DA1D3E26; Path=/; HttpOnly
+	Set-Cookie: XSRF-TOKEN=BGBs7wQK03KshMJow2FPR_3ySUNCYywNXi7iCC3SbT-9x14nZVlU3WA4sRCBsKQM9Ux7ccTKZHsmARUgZk_bOxywW1uF9W0V; Path=/
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 0
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+	X-Frame-Options: DENY
+	Location: https://successcard.proxiad.com/oauth2/authorization/azure
+	
+WhatWeb report for https://successcard.proxiad.com/oauth2/authorization/azure
+Status    : 302 Found
+Title     : <None>
+IP        : <Unknown>
+Country   : <Unknown>
+
+Summary   : Cookies[XSRF-TOKEN], HTTPServer[nginx/1.28.0], nginx[1.28.0], RedirectLocation[https://login.microsoftonline.com/fc2be715-4a94-42dd-832d-9d7dbb73c754/oauth2/v2.0/authorize?response_type=code&client_id=a23a1380-ab03-4ebd-b6b1-46410e032147&scope=openid%20profile%20email&state=10rsYe2Ct44OSavbobm75u6i41olOda0rtHM7fL72vI%3D&redirect_uri=https://successcard.proxiad.com/login/oauth2/code/azure&nonce=f_fiix4lcl9oFNHghRbD7V0PIQziRXn-cvzNwvvC5rE], Strict-Transport-Security[max-age=31536000 ; includeSubDomains], UncommonHeaders[x-content-type-options], X-Frame-Options[DENY], X-XSS-Protection[0]
+
+Detected Plugins:
+[ Cookies ]
+	Display the names of cookies in the HTTP headers. The 
+	values are not returned to save on space. 
+
+	String       : XSRF-TOKEN
+
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to 
+	identify the operating system from the server header. 
+
+	String       : nginx/1.28.0 (from server string)
+
+[ RedirectLocation ]
+	HTTP Server string location. used with http-status 301 and 
+	302 
+
+	String       : https://login.microsoftonline.com/fc2be715-4a94-42dd-832d-9d7dbb73c754/oauth2/v2.0/authorize?response_type=code&client_id=a23a1380-ab03-4ebd-b6b1-46410e032147&scope=openid%20profile%20email&state=10rsYe2Ct44OSavbobm75u6i41olOda0rtHM7fL72vI%3D&redirect_uri=https://successcard.proxiad.com/login/oauth2/code/azure&nonce=f_fiix4lcl9oFNHghRbD7V0PIQziRXn-cvzNwvvC5rE (from location)
+
+[ Strict-Transport-Security ]
+	Strict-Transport-Security is an HTTP header that restricts 
+	a web browser from accessing a website without the security 
+	of the HTTPS protocol. 
+
+	String       : max-age=31536000 ; includeSubDomains
+
+[ UncommonHeaders ]
+	Uncommon HTTP server headers. The blacklist includes all 
+	the standard headers and many non standard but common ones. 
+	Interesting but fairly common headers should have their own 
+	plugins, eg. x-powered-by, server and x-aspnet-version. 
+	Info about headers can be found at www.http-stats.com 
+
+	String       : x-content-type-options (from headers)
+
+[ X-Frame-Options ]
+	This plugin retrieves the X-Frame-Options value from the 
+	HTTP header. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc288472%28VS.85%29.
+	aspx
+
+	String       : DENY
+
+[ X-XSS-Protection ]
+	This plugin retrieves the X-XSS-Protection value from the 
+	HTTP header. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc288472%28VS.85%29.
+	aspx
+
+	String       : 0
+
+[ nginx ]
+	Nginx (Engine-X) is a free, open-source, high-performance 
+	HTTP server and reverse proxy, as well as an IMAP/POP3 
+	proxy server. 
+
+	Version      : 1.28.0
+	Website     : http://nginx.net/
+
+HTTP Headers:
+	HTTP/1.1 302 
+	Server: nginx/1.28.0
+	Date: Tue, 28 Jul 2026 07:25:39 GMT
+	Content-Length: 0
+	Connection: close
+	Set-Cookie: XSRF-TOKEN=lwdk3r5fWd3s4SV0R9ZRRch4mX0pFpXzbiKaNgwINxHAvQbM9j5c7NptO7_B1UMQcftlc_FAtEVNdKzeVkOjBT1qAXX4jzX-; Path=/
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 0
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+	X-Frame-Options: DENY
+	Location: https://login.microsoftonline.com/fc2be715-4a94-42dd-832d-9d7dbb73c754/oauth2/v2.0/authorize?response_type=code&client_id=a23a1380-ab03-4ebd-b6b1-46410e032147&scope=openid%20profile%20email&state=10rsYe2Ct44OSavbobm75u6i41olOda0rtHM7fL72vI%3D&redirect_uri=https://successcard.proxiad.com/login/oauth2/code/azure&nonce=f_fiix4lcl9oFNHghRbD7V0PIQziRXn-cvzNwvvC5rE
+	
+WhatWeb report for https://login.microsoftonline.com/fc2be715-4a94-42dd-832d-9d7dbb73c754/oauth2/v2.0/authorize?response_type=code&client_id=a23a1380-ab03-4ebd-b6b1-46410e032147&scope=openid%20profile%20email&state=10rsYe2Ct44OSavbobm75u6i41olOda0rtHM7fL72vI%3D&redirect_uri=https://successcard.proxiad.com/login/oauth2/code/azure&nonce=f_fiix4lcl9oFNHghRbD7V0PIQziRXn-cvzNwvvC5rE
+Status    : 200 OK
+Title     : Sign in to your account
+IP        : 20.190.177.21
+Country   : UNITED STATES, US
+
+Summary   : Cookies[buid,esctx,esctx-wYJxrWyQUOY,fpc,stsservicecookie,x-ms-gateway-slice], HTML5, HttpOnly[buid,esctx,esctx-wYJxrWyQUOY,fpc,stsservicecookie,x-ms-gateway-slice], Meta-Refresh-Redirect[https://login.microsoftonline.com/jsdisabled], Script[text/javascript], Strict-Transport-Security[max-age=31536000; includeSubDomains], UncommonHeaders[x-content-type-options,cross-origin-opener-policy-report-only,reporting-endpoints,link,x-dns-prefetch-control,x-ms-request-id,x-ms-ests-server,x-ms-srs,content-security-policy-report-only], X-Frame-Options[DENY], X-UA-Compatible[IE=edge], X-XSS-Protection[0]
+
+Detected Plugins:
+[ Cookies ]
+	Display the names of cookies in the HTTP headers. The 
+	values are not returned to save on space. 
+
+	String       : buid
+	String       : esctx
+	String       : esctx-wYJxrWyQUOY
+	String       : fpc
+	String       : x-ms-gateway-slice
+	String       : stsservicecookie
+
+[ HTML5 ]
+	HTML version 5, detected by the doctype declaration 
+
+
+[ HttpOnly ]
+	If the HttpOnly flag is included in the HTTP set-cookie 
+	response header and the browser supports it then the cookie 
+	cannot be accessed through client side script - More Info: 
+	http://en.wikipedia.org/wiki/HTTP_cookie 
+
+	String       : buid,esctx,esctx-wYJxrWyQUOY,fpc,stsservicecookie,x-ms-gateway-slice
+
+[ Meta-Refresh-Redirect ]
+	Meta refresh tag is a deprecated URL element that can be 
+	used to optionally wait x seconds before reloading the 
+	current page or loading a new page. More info: 
+	https://secure.wikimedia.org/wikipedia/en/wiki/Meta_refresh 
+
+	String       : https://login.microsoftonline.com/jsdisabled
+
+[ Script ]
+	This plugin detects instances of script HTML elements and 
+	returns the script language/type. 
+
+	String       : text/javascript
+
+[ Strict-Transport-Security ]
+	Strict-Transport-Security is an HTTP header that restricts 
+	a web browser from accessing a website without the security 
+	of the HTTPS protocol. 
+
+	String       : max-age=31536000; includeSubDomains
+
+[ UncommonHeaders ]
+	Uncommon HTTP server headers. The blacklist includes all 
+	the standard headers and many non standard but common ones. 
+	Interesting but fairly common headers should have their own 
+	plugins, eg. x-powered-by, server and x-aspnet-version. 
+	Info about headers can be found at www.http-stats.com 
+
+	String       : x-content-type-options,cross-origin-opener-policy-report-only,reporting-endpoints,link,x-dns-prefetch-control,x-ms-request-id,x-ms-ests-server,x-ms-srs,content-security-policy-report-only (from headers)
+
+[ X-Frame-Options ]
+	This plugin retrieves the X-Frame-Options value from the 
+	HTTP header. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc288472%28VS.85%29.
+	aspx
+
+	String       : DENY
+
+[ X-UA-Compatible ]
+	This plugin retrieves the X-UA-Compatible value from the 
+	HTTP header and meta http-equiv tag. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc817574.aspx 
+
+	String       : IE=edge
+
+[ X-XSS-Protection ]
+	This plugin retrieves the X-XSS-Protection value from the 
+	HTTP header. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc288472%28VS.85%29.
+	aspx
+
+	String       : 0
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Cache-Control: no-store, no-cache
+	Pragma: no-cache
+	Content-Type: text/html; charset=utf-8
+	Content-Encoding: gzip
+	Expires: -1
+	Vary: Accept-Encoding
+	Strict-Transport-Security: max-age=31536000; includeSubDomains
+	X-Content-Type-Options: nosniff
+	X-Frame-Options: DENY
+	Cross-Origin-Opener-Policy-Report-Only: same-origin; report-to="coop-endpoint"
+	Reporting-Endpoints: coop-endpoint="https://coop.msauth.net:443/api/coopReport?client_type=web-none&client_id=a23a1380-ab03-4ebd-b6b1-46410e032147&correlation_id=5ac05d32-a331-455c-8b0f-0bfeab6e0faf"
+	Link: <https://aadcdn.msftauth.net>; rel=preconnect; crossorigin
+	Link: <https://aadcdn.msftauth.net>; rel=preconnect; crossorigin,<https://aadcdn.msftauth.net>; rel=dns-prefetch
+	Link: <https://aadcdn.msftauth.net>; rel=preconnect; crossorigin,<https://aadcdn.msftauth.net>; rel=dns-prefetch,<https://aadcdn.msauth.net>; rel=dns-prefetch
+	X-DNS-Prefetch-Control: on
+	P3P: CP="DSP CUR OTPi IND OTRi ONL FIN"
+	x-ms-request-id: 5d3479e9-f539-4ada-afe0-3d5d56504300
+	x-ms-ests-server: 2.1.24997.8 - SEC ProdSlices
+	x-ms-srs: 1.P
+	Content-Security-Policy-Report-Only: object-src 'none'; base-uri 'self'; script-src 'self' 'nonce-JXhVrkcqqMURjbbycbQJ2Q' 'unsafe-inline' 'unsafe-eval' https://*.msauth.net https://*.msftauth.net https://*.msftauthimages.net https://*.msauthimages.net https://*.msidentity.com https://*.microsoftonline-p.com https://*.microsoftazuread-sso.com https://*.azureedge.net https://*.outlook.com https://*.office.com https://*.office365.com https://*.microsoft.com https://*.bing.com 'report-sample'; report-uri https://csp.microsoft.com/report/ESTS-UX-All
+	X-XSS-Protection: 0
+	Set-Cookie: buid=1.ASAAFecr_JRK3UKDLZ19u3PHVIATOqIDq71OtrFGQQ4DIUcAAAAgAA.AQABGgEAAAAdDD7nC9b5Q7JPd_okEQRFRXZvU3RzQXJ0aWZhY3RzAwAAAAAAgpc4acrQzH1TxDZAF4_YEuaVS-eLYjKSCnF-YR1sAncgni6ZSF99nj7lkdj5SBaK9fsuvNs6D6ebT1wECtIOfht4in-FQuJ9xruN1r6HC9kgAA; expires=Thu, 27-Aug-2026 07:25:42 GMT; path=/; secure; HttpOnly; SameSite=None
+	Set-Cookie: esctx=PBgABBwEAAAAdDD7nC9b5Q7JPd_okEQRFRXZvU3RzQXJ0aWZhY3RzDQAAAAAA3ko5uab2YzciP8-ZL0i8RQ2iBr85RCl3Ne2nCV7Ld2toQFxS1h-eW7Mbrm79ZQndaFTPSndiU6uqTelXzk_Kl01WDV04-eXTE3Bdl8QfYlvIhkSMFdLwOEtrIzKkjxWWxrIzhQtJAFMNrMAgwcVYBWUxs4lsE4KVFZ9KZUnRQJ6yYjUE3FfL5NYX7Dy9D4EYBqi6JYtVgi-gZnwCC9s_9fyd4MPrfuPkSLRYyXhHE3rYRiNGlX_eIwFiuhjSi9agNz0xN0nALLP_D5uiNBDHNvqBkl_OeEnZPK4-HJplmErH2mhJOVDmK0PYLbjAqVGQED3bbB7Rph_7BTE0q7EPXePa5igyareBVm9iWwTT7ZZkmy0OcySPHFITMrI2ig6TJMQd_bajqR6H5bbWws7lSmGkaOlLRcP3yXT76GwbG4XSAus25MXCuJcTfa1Vw1YOB6NKXAkpoIUML0jM_-sSaOHqrzKmx3oh18RLs4SdJ1EoKP_sm7R9w_4aZw7rh-K5OeHMUWkdRLXnu-bJ7BpqwZOvA8mo3_JIHcMmAANfNLT6hx_y-KN5bxeQRTxclzL4UTAi57jKOzbAwPjz0fn8YXgnf2D_YyR06otQgkausUoLqJ47OGey1Q3EsDs4YTUNPbkfAeE5xU4fSABuIqEF_OCpEpok0DmYWosju58Sv-R-V-2UBfV-PM8a16lHQKKqBS_EoF4CXvivKWn1mHNiwEls8iQ9qsHcZhMB4RUz9RUgAA; domain=.login.microsoftonline.com; path=/; secure; HttpOnly; SameSite=None
+	Set-Cookie: esctx-wYJxrWyQUOY=AQABCQEAAAAdDD7nC9b5Q7JPd_okEQRFRXZvU3RzQXJ0aWZhY3RzDQAAAAAAth3OzhmCNcDxgpDn_x9WOJrDidrbQCA6yR8SWDh6REhV446Kt30zGU2M7-rrlMa_wOaiy6Mstemqc_eTI04PC4g6o-tlsaMgcIyLca2Q0B5BC4352xWIdEyMD4tmCPTCKETtr2Ss417-5_dNA2EQCCAA; domain=.login.microsoftonline.com; path=/; secure; HttpOnly; SameSite=None
+	Set-Cookie: fpc=AjsRtZis6OtPsgSUCoMhvF7b72hpAQAAAHZQ-uEOAAAA; expires=Thu, 27-Aug-2026 07:25:42 GMT; path=/; secure; HttpOnly; SameSite=None
+	Set-Cookie: x-ms-gateway-slice=estsfd; path=/; secure; samesite=none; httponly
+	Set-Cookie: stsservicecookie=estsfd; path=/; secure; samesite=none; httponly
+	Date: Tue, 28 Jul 2026 07:25:42 GMT
+	Connection: close
+	Content-Length: 17192
+	
+WhatWeb report for https://login.microsoftonline.com/jsdisabled
+Status    : 200 OK
+Title     : Something went wrong
+IP        : 20.190.177.21
+Country   : UNITED STATES, US
+
+Summary   : Cookies[fpc,x-ms-gateway-slice], HttpOnly[fpc,x-ms-gateway-slice], Strict-Transport-Security[max-age=31536000; includeSubDomains], UncommonHeaders[x-content-type-options,link,x-dns-prefetch-control,x-ms-request-id,x-ms-ests-server,x-ms-srs,content-security-policy-report-only], X-UA-Compatible[IE=edge], X-XSS-Protection[0]
+
+Detected Plugins:
+[ Cookies ]
+	Display the names of cookies in the HTTP headers. The 
+	values are not returned to save on space. 
+
+	String       : fpc
+	String       : x-ms-gateway-slice
+
+[ HttpOnly ]
+	If the HttpOnly flag is included in the HTTP set-cookie 
+	response header and the browser supports it then the cookie 
+	cannot be accessed through client side script - More Info: 
+	http://en.wikipedia.org/wiki/HTTP_cookie 
+
+	String       : fpc,x-ms-gateway-slice
+
+[ Strict-Transport-Security ]
+	Strict-Transport-Security is an HTTP header that restricts 
+	a web browser from accessing a website without the security 
+	of the HTTPS protocol. 
+
+	String       : max-age=31536000; includeSubDomains
+
+[ UncommonHeaders ]
+	Uncommon HTTP server headers. The blacklist includes all 
+	the standard headers and many non standard but common ones. 
+	Interesting but fairly common headers should have their own 
+	plugins, eg. x-powered-by, server and x-aspnet-version. 
+	Info about headers can be found at www.http-stats.com 
+
+	String       : x-content-type-options,link,x-dns-prefetch-control,x-ms-request-id,x-ms-ests-server,x-ms-srs,content-security-policy-report-only (from headers)
+
+[ X-UA-Compatible ]
+	This plugin retrieves the X-UA-Compatible value from the 
+	HTTP header and meta http-equiv tag. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc817574.aspx 
+
+	String       : IE=edge
+
+[ X-XSS-Protection ]
+	This plugin retrieves the X-XSS-Protection value from the 
+	HTTP header. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc288472%28VS.85%29.
+	aspx
+
+	String       : 0
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Cache-Control: no-store, no-cache
+	Pragma: no-cache
+	Content-Type: text/html; charset=utf-8
+	Content-Encoding: gzip
+	Expires: -1
+	Vary: Accept-Encoding
+	Strict-Transport-Security: max-age=31536000; includeSubDomains
+	X-Content-Type-Options: nosniff
+	Link: <https://aadcdn.msftauth.net>; rel=preconnect; crossorigin
+	Link: <https://aadcdn.msftauth.net>; rel=preconnect; crossorigin,<https://aadcdn.msftauth.net>; rel=dns-prefetch
+	Link: <https://aadcdn.msftauth.net>; rel=preconnect; crossorigin,<https://aadcdn.msftauth.net>; rel=dns-prefetch,<https://aadcdn.msauth.net>; rel=dns-prefetch
+	X-DNS-Prefetch-Control: on
+	P3P: CP="DSP CUR OTPi IND OTRi ONL FIN"
+	x-ms-request-id: 06303e11-ddfe-403c-9417-e91a30305600
+	x-ms-ests-server: 2.1.24997.8 - WEULR1 ProdSlices
+	x-ms-srs: 1.P
+	Content-Security-Policy-Report-Only: object-src 'none'; base-uri 'self'; script-src 'self' 'nonce-9D2RCb5h14Oy9neicf8z9Q' 'unsafe-inline' 'unsafe-eval' https://*.msauth.net https://*.msftauth.net https://*.msftauthimages.net https://*.msauthimages.net https://*.msidentity.com https://*.microsoftonline-p.com https://*.microsoftazuread-sso.com https://*.azureedge.net https://*.outlook.com https://*.office.com https://*.office365.com https://*.microsoft.com https://*.bing.com 'report-sample'; report-uri https://csp.microsoft.com/report/ESTS-UX-All
+	X-XSS-Protection: 0
+	Set-Cookie: fpc=AjsRtZis6OtPsgSUCoMhvF7b72hpAQAAAHZQ-uEOAAAA; expires=Thu, 27-Aug-2026 07:25:47 GMT; path=/; secure; HttpOnly; SameSite=None
+	Set-Cookie: x-ms-gateway-slice=estsfd; path=/; secure; samesite=none; httponly
+	Date: Tue, 28 Jul 2026 07:25:47 GMT
+	Connection: close
+	Content-Length: 1366
+	

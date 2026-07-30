@@ -1,0 +1,28 @@
+# Nmap 7.99 scan initiated Mon Jul 27 12:23:14 2026 as: /usr/lib/nmap/nmap -sU -T4 -p53,161,162,500,514,1434,1900,4500 -oA evidence/skopje-udp-scan 45.156.140.97 45.156.140.99
+Nmap scan report for 45.156.140.97
+Host is up (0.040s latency).
+
+PORT     STATE         SERVICE
+53/udp   open|filtered domain
+161/udp  open|filtered snmp
+162/udp  open|filtered snmptrap
+500/udp  open|filtered isakmp
+514/udp  open|filtered syslog
+1434/udp open|filtered ms-sql-m
+1900/udp open|filtered upnp
+4500/udp open|filtered nat-t-ike
+
+Nmap scan report for 45.156.140.99
+Host is up (0.040s latency).
+
+PORT     STATE         SERVICE
+53/udp   open|filtered domain
+161/udp  open|filtered snmp
+162/udp  open|filtered snmptrap
+500/udp  open|filtered isakmp
+514/udp  open|filtered syslog
+1434/udp open|filtered ms-sql-m
+1900/udp open|filtered upnp
+4500/udp open|filtered nat-t-ike
+
+# Nmap done at Mon Jul 27 12:23:17 2026 -- 2 IP addresses (2 hosts up) scanned in 2.65 seconds

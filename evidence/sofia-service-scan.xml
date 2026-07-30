@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Mon Jul 27 12:08:07 2026 as: /usr/lib/nmap/nmap -sS -sV -sC -p 443 -T4 -oA evidence/sofia-service-scan 82.103.125.235 82.103.125.239 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -sS -sV -sC -p 443 -T4 -oA evidence/sofia-service-scan 82.103.125.235 82.103.125.239" start="1785143287" startstr="Mon Jul 27 12:08:07 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="443"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="82.103.125.239" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="82.103.125.235" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1785143288" endtime="1785143307"><status state="up" reason="syn-ack" reason_ttl="56"/>
+<address addr="82.103.125.235" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="http" product="nginx" version="1.30.2" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.30.2</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1&#xa;  http/1.0&#xa;  http/0.9"><elem>http/1.1</elem>
+<elem>http/1.0</elem>
+<elem>http/0.9</elem>
+</script><script id="http-server-header" output="nginx/1.30.2"><elem>nginx/1.30.2</elem>
+</script><script id="ssl-cert" output="Subject: commonName=grow.proxiad.bg&#xa;Subject Alternative Name: DNS:grow.proxiad.bg&#xa;Not valid before: 2026-05-30T20:14:19&#xa;Not valid after:  2026-08-28T20:14:18"><table key="subject">
+<elem key="commonName">grow.proxiad.bg</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">D6F7E3C7D0EAA4C4DD423FF01202161A4FC14731FDFB581CBAA5FD451BC0B5BCD9B30AA2278BAA04F9BADE11A34ED8649633402A917E4E2F723B65E1303A2A728014AD352FE098925D8FE55D519FF8E2F12326460107236853512D4DD0D184EC38D085EC701B44F1260F6045B4484206C92DC3E6CDE9D0231445E8195DD57A1E13AD55E96B71E503C678522D498F51E7CEB58A42A9B931CF0D15838091247CB193111D355646F341F8CE457ADC05C933BC5CA36E03795AFC9A908DFD0084347E4FA7904A9E5382349DBC478DFCF6F2B5DDA5DBFA429CDC454DF0B502B7CD23F8C6E10E1A566C207F240B64537BC2E8E5683C20EAC1D8CF8416B0244E5FB14A3D</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">E4:74:50:CD:1A:F9:FF:82:F7:77:B5:83:FC:7C:AA:2C:90:AA:12:89</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1F:2F:35:BE:46:14:82:CD:40:B1:AE:79:2C:55:78:FA:F7:D4:68:FB</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr1.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:grow.proxiad.bg</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr1.c.lencr.org/69.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CB:38:F7:15:89:7C:84:A1:44:5F:5B:C1:DD:FB:C9:6E:&#xa;                F2:9A:59:CD:47:0A:69:05:85:B0:CB:14:C3:14:58:E7&#xa;    Timestamp : May 30 21:12:49.933 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:FA:5F:32:7B:BC:C0:00:DD:03:03:80:&#xa;                43:32:3F:38:41:3E:9B:67:7D:99:71:AE:6D:B3:75:63:&#xa;                00:FA:0B:2D:6C:02:20:64:89:41:B2:51:2A:AC:CB:65:&#xa;                07:03:D8:4D:D3:F1:25:C4:1F:FD:96:E1:90:77:72:BB:&#xa;                13:CA:84:C5:0C:0B:98&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 6C:FE:50:19:43:A8:5E:A9:16:BC:52:D1:33:E4:DC:C9:&#xa;                1E:F1:41:1C:7D:25:84:20:D1:73:80:9E:18:18:EB:3A&#xa;    Timestamp : May 30 21:12:50.201 2026 GMT&#xa;    Extensions: 00:00:05:00:0E:28:93:B6&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:26:DD:83:C3:CA:75:97:0C:B6:73:C3:DE:&#xa;                6A:A5:ED:39:21:D7:76:CB:C8:D6:A3:50:AB:4E:0C:72:&#xa;                29:9E:E7:0B:02:20:3A:FE:E0:F9:CC:7D:08:09:DB:58:&#xa;                00:CA:AB:F5:B9:F3:26:F4:C8:B8:D0:10:06:D9:20:5E:&#xa;                69:C9:98:3E:E9:96</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-05-30T20:14:19</elem>
+<elem key="notAfter">2026-08-28T20:14:18</elem>
+</table>
+<elem key="md5">7d95d0d4203cdea98d57cfa435e86046</elem>
+<elem key="sha1">800b3979b6aca1e9d6d399747a36b298a3e82e42</elem>
+<elem key="sha256">bbb77c0ce3c0f47b8091c337efb9a7f6b3aa02d9a1b25f41b3d3434e32d7c493</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIE9zCCA9+gAwIBAgISBSXWjo2iAmrjMzVABLgUMb5EMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjEwHhcNMjYwNTMwMjAxNDE5WhcNMjYwODI4MjAxNDE4WjAaMRgwFgYDVQQD&#xa;Ew9ncm93LnByb3hpYWQuYmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB&#xa;AQDW9+PH0OqkxN1CP/ASAhYaT8FHMf37WBy6pf1FG8C1vNmzCqIni6oE+breEaNO&#xa;2GSWM0AqkX5OL3I7ZeEwOipygBStNS/gmJJdj+VdUZ/44vEjJkYBByNoU1EtTdDR&#xa;hOw40IXscBtE8SYPYEW0SEIGyS3D5s3p0CMURegZXdV6HhOtVelrceUDxnhSLUmP&#xa;UefOtYpCqbkxzw0Vg4CRJHyxkxEdNVZG80H4zkV63AXJM7xco24DeVr8mpCN/QCE&#xa;NH5Pp5BKnlOCNJ28R4389vK13aXb+kKc3EVN8LUCt80j+MbhDhpWbCB/JAtkU3vC&#xa;6OVoPCDqwdjPhBawJE5fsUo9AgMBAAGjggIcMIICGDAOBgNVHQ8BAf8EBAMCBaAw&#xa;EwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU5HRQ&#xa;zRr5/4L3d7WD/HyqLJCqEokwHwYDVR0jBBgwFoAUHy81vkYUgs1Asa55LFV4+vfU&#xa;aPswMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdodHRwOi8veXIxLmkubGVu&#xa;Y3Iub3JnLzAaBgNVHREEEzARgg9ncm93LnByb3hpYWQuYmcwEwYDVR0gBAwwCjAI&#xa;BgZngQwBAgEwLgYDVR0fBCcwJTAjoCGgH4YdaHR0cDovL3lyMS5jLmxlbmNyLm9y&#xa;Zy82OS5jcmwwggELBgorBgEEAdZ5AgQCBIH8BIH5APcAdgDLOPcViXyEoURfW8Hd&#xa;+8lu8ppZzUcKaQWFsMsUwxRY5wAAAZ56u4QNAAAEAwBHMEUCIQD6XzJ7vMAA3QMD&#xa;gEMyPzhBPptnfZlxrm2zdWMA+gstbAIgZIlBslEqrMtlBwPYTdPxJcQf/ZbhkHdy&#xa;uxPKhMUMC5gAfQBs/lAZQ6heqRa8UtEz5NzJHvFBHH0lhCDRc4CeGBjrOgAAAZ56&#xa;u4UZAAgAAAUADiiTtgQDAEYwRAIgJt2Dw8p1lwy2c8PeaqXtOSHXdsvI1qNQq04M&#xa;cime5wsCIDr+4PnMfQgJ21gAyqv1ufMm9Mi40BAG2SBeacmYPumWMA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQAHJI2ABbN0r1k8HlO35DV0P/R3Y4DA33K8byoa2b7BpxcTqShH&#xa;znd3WsmfKYhvXVTxpZEYyJAcjSiixTzG34VecfRbpJtJJAK50GdpxDa+bcSC6iJz&#xa;XVtPWbr9XheFPZd/KevyVhvLhxfZNjra/aQHySbBQYRDzT/hfr3Ms8phSnUoqE/K&#xa;IuBt6/PmLNZKJmIvkv3LtwFFPyIsWDYBtsaRjTLx3rW7BQbpq6ifg/n9BEDlEWiq&#xa;D6ErzFVjRkLDGI41lezQxmBHH3I3mtJQLee/gjDG0maAMJ+iISZAd+OzUwJXEOWG&#xa;B69KCPgc9efUg++xeyDObG4InM2MbV8NjMil&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-title" output="Grow@Proxiad"><elem key="title">Grow@Proxiad</elem>
+</script></port>
+</ports>
+<times srtt="44409" rttvar="41588" to="210761"/>
+</host>
+<host starttime="1785143288" endtime="1785143307"><status state="up" reason="syn-ack" reason_ttl="56"/>
+<address addr="82.103.125.239" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="http" product="nginx" version="1.28.3" extrainfo="Ubuntu" ostype="Linux" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.28.3</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-server-header" output="nginx/1.28.3 (Ubuntu)"><elem>nginx/1.28.3 (Ubuntu)</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="http-robots.txt" output="87 disallowed entries (15 shown)&#xa;/ /autocomplete/users /autocomplete/projects /search &#xa;/admin /profile /dashboard /users /api/v* /help /s/ /-/profile &#xa;/-/profile/ /-/user_settings/ /-/ide/"/><script id="http-trane-info" output="Problem with XML parsing of /evox/about"/><script id="ssl-cert" output="Subject: commonName=ddr.proxiad.bg&#xa;Subject Alternative Name: DNS:ddr.proxiad.bg&#xa;Not valid before: 2026-06-11T10:13:58&#xa;Not valid after:  2026-09-09T10:13:57"><table key="subject">
+<elem key="commonName">ddr.proxiad.bg</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YE2</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">ec</elem>
+<elem key="bits">256</elem>
+<table key="ecdhparams">
+<table key="curve_params">
+<elem key="ec_curve_type">namedcurve</elem>
+<elem key="curve">prime256v1</elem>
+</table>
+</table>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">F5:ED:4A:67:92:FF:73:56:3E:54:A6:BF:31:66:BF:D3:4A:4B:F1:9D</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">B9:59:F2:8E:CF:22:F0:86:D3:37:48:FF:76:14:18:BA:82:D8:55:87</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://ye2.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:ddr.proxiad.bg</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://ye2.c.lencr.org/39.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : D8:09:55:3B:94:4F:7A:FF:C8:16:19:6F:94:4F:85:AB:&#xa;                B0:F8:FC:5E:87:55:26:0F:15:D1:2E:72:BB:45:4B:14&#xa;    Timestamp : Jun 11 11:12:28.251 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:0E:DF:E7:51:CB:6D:2D:08:D5:A3:C6:2C:&#xa;                8B:FF:92:FD:21:A9:6C:97:2F:ED:9D:61:BD:BC:10:64:&#xa;                62:E8:C3:79:02:21:00:8D:CA:FF:C3:C1:A9:02:4F:AA:&#xa;                37:E7:A1:45:81:B8:2A:27:32:C3:EB:35:4E:79:B4:43:&#xa;                64:CD:AA:B4:58:93:71&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A8:26:CB:E3:0A:C6:35:12:46:53:3F:E0:65:F1:4F:19:&#xa;                D9:6E:19:08:13:C4:1D:D9:6D:79:00:B3:12:3C:55:27&#xa;    Timestamp : Jun 11 11:12:28.946 2026 GMT&#xa;    Extensions: 00:00:05:00:0E:F8:19:3C&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:72:42:1A:6A:21:C7:AB:21:ED:30:12:7F:&#xa;                92:9D:61:1C:A3:82:B3:D7:2C:DA:2E:17:C4:7F:E3:3A:&#xa;                7C:39:EE:84:02:20:34:8D:54:81:46:74:13:9B:82:4D:&#xa;                1D:A7:76:8B:5F:B2:56:55:C9:82:7B:23:69:D4:31:5E:&#xa;                43:5D:DF:26:EB:AA</elem>
+</table>
+</table>
+<elem key="sig_algo">ecdsa-with-SHA384</elem>
+<table key="validity">
+<elem key="notBefore">2026-06-11T10:13:58</elem>
+<elem key="notAfter">2026-09-09T10:13:57</elem>
+</table>
+<elem key="md5">31895e4c43809de5271a06b33fbd5696</elem>
+<elem key="sha1">41b56eb83b2e07200107fba5ac1efe6f4539214d</elem>
+<elem key="sha256">4808a1e52b9705a079d5c28469a9b6b0842cb9e50c575bd74d92e5237e48293e</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDijCCAw+gAwIBAgISBfkBLJ69SBk4gx8LFc5BZgqmMAoGCCqGSM49BAMDMDMx&#xa;CzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQDEwNZ&#xa;RTIwHhcNMjYwNjExMTAxMzU4WhcNMjYwOTA5MTAxMzU3WjAZMRcwFQYDVQQDEw5k&#xa;ZHIucHJveGlhZC5iZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABMTFTGpNfyIx&#xa;9H41U//fX8PXSTZgTtQY4E9K2nhczI3KkE7VHFbgFqTUt2R2yao60+9wY6HABc+L&#xa;mA0ClGbyh4+jggIbMIICFzAOBgNVHQ8BAf8EBAMCB4AwEwYDVR0lBAwwCgYIKwYB&#xa;BQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU9e1KZ5L/c1Y+VKa/MWa/00pL&#xa;8Z0wHwYDVR0jBBgwFoAUuVnyjs8i8IbTN0j/dhQYuoLYVYcwMwYIKwYBBQUHAQEE&#xa;JzAlMCMGCCsGAQUFBzAChhdodHRwOi8veWUyLmkubGVuY3Iub3JnLzAZBgNVHREE&#xa;EjAQgg5kZHIucHJveGlhZC5iZzATBgNVHSAEDDAKMAgGBmeBDAECATAuBgNVHR8E&#xa;JzAlMCOgIaAfhh1odHRwOi8veWUyLmMubGVuY3Iub3JnLzM5LmNybDCCAQsGCisG&#xa;AQQB1nkCBAIEgfwEgfkA9wB2ANgJVTuUT3r/yBYZb5RPhauw+Pxeh1UmDxXRLnK7&#xa;RUsUAAABnrZiLlsAAAQDAEcwRQIgDt/nUcttLQjVo8Ysi/+S/SGpbJcv7Z1hvbwQ&#xa;ZGLow3kCIQCNyv/DwakCT6o356FFgbgqJzLD6zVOebRDZM2qtFiTcQB9AKgmy+MK&#xa;xjUSRlM/4GXxTxnZbhkIE8Qd2W15ALMSPFUnAAABnrZiMRIACAAABQAO+Bk8BAMA&#xa;RjBEAiByQhpqIcerIe0wEn+SnWEco4Kz1yzaLhfEf+M6fDnuhAIgNI1UgUZ0E5uC&#xa;TR2ndotfslZVyYJ7I2nUMV5DXd8m66owCgYIKoZIzj0EAwMDaQAwZgIxALm8cGSw&#xa;i6k1bcgdzFIKE6sgFKEsTBJq1aZRTm60WrgZf7kDxXCQiQeQ7481sBw0XwIxANO8&#xa;0DWtADeroNhIXn1VIacFD+OCUsUdNfvoQABzXwLxmZmKtI3qFyyScn0nUHcKuw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-title" output="Sign in \xC2\xB7 GitLab&#xa;Requested resource was https://82.103.125.239/users/sign_in"><elem key="title">Sign in \xC2\xB7 GitLab</elem>
+<elem key="redirect_url">https://82.103.125.239/users/sign_in</elem>
+</script></port>
+</ports>
+<times srtt="39356" rttvar="35803" to="182568"/>
+</host>
+<runstats><finished time="1785143307" timestr="Mon Jul 27 12:08:27 2026" summary="Nmap done at Mon Jul 27 12:08:27 2026; 2 IP addresses (2 hosts up) scanned in 19.94 seconds" elapsed="19.94" exit="success"/><hosts up="2" down="0" total="2"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,208 @@
+WhatWeb report for https://proxiad.desk-buddy.com/
+Status    : 302 Found
+Title     : <None>
+IP        : 104.21.19.175
+Country   : UNITED STATES, US
+
+Summary   : Content-Language[en], HTTPServer[cloudflare], RedirectLocation[https://proxiad.desk-buddy.com/my-bookings], UncommonHeaders[nel,cf-cache-status,report-to,cf-ray,alt-svc]
+
+Detected Plugins:
+[ Content-Language ]
+	Detect the content-language setting from the HTTP header. 
+
+	String       : en
+
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to 
+	identify the operating system from the server header. 
+
+	String       : cloudflare (from server string)
+
+[ RedirectLocation ]
+	HTTP Server string location. used with http-status 301 and 
+	302 
+
+	String       : https://proxiad.desk-buddy.com/my-bookings (from location)
+
+[ UncommonHeaders ]
+	Uncommon HTTP server headers. The blacklist includes all 
+	the standard headers and many non standard but common ones. 
+	Interesting but fairly common headers should have their own 
+	plugins, eg. x-powered-by, server and x-aspnet-version. 
+	Info about headers can be found at www.http-stats.com 
+
+	String       : nel,cf-cache-status,report-to,cf-ray,alt-svc (from headers)
+
+HTTP Headers:
+	HTTP/1.1 302 Found
+	Date: Tue, 28 Jul 2026 08:29:44 GMT
+	Content-Length: 0
+	Connection: close
+	Server: cloudflare
+	Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+	Location: https://proxiad.desk-buddy.com/my-bookings
+	Content-Language: en
+	cf-cache-status: DYNAMIC
+	Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=iaZ%2FWcKPh%2BGQqbLMRjmbokMssnPAm7ssbJqlyqoAxvAmu5ChqmpkbvlE2Kq9yjLEDwPIkpPEeWP%2F8fYWGJwiA7aYkN0DwxxkvPTFWYDUG0zJVnyU1mguCSO0fS7Dut1b1UMUS%2FSqaJGQ"}]}
+	CF-RAY: a222848f48228428-SOF
+	alt-svc: h3=":443"; ma=86400
+	
+WhatWeb report for https://proxiad.desk-buddy.com/my-bookings
+Status    : 302 Found
+Title     : <None>
+IP        : 104.21.19.175
+Country   : UNITED STATES, US
+
+Summary   : Cookies[JSESSIONID], HTTPServer[cloudflare], HttpOnly[JSESSIONID], Java, RedirectLocation[https://proxiad.desk-buddy.com/lobby], Strict-Transport-Security[max-age=31536000 ; includeSubDomains], UncommonHeaders[nel,x-content-type-options,content-security-policy,cf-cache-status,report-to,cf-ray,alt-svc], X-XSS-Protection[0]
+
+Detected Plugins:
+[ Cookies ]
+	Display the names of cookies in the HTTP headers. The 
+	values are not returned to save on space. 
+
+	String       : JSESSIONID
+
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to 
+	identify the operating system from the server header. 
+
+	String       : cloudflare (from server string)
+
+[ HttpOnly ]
+	If the HttpOnly flag is included in the HTTP set-cookie 
+	response header and the browser supports it then the cookie 
+	cannot be accessed through client side script - More Info: 
+	http://en.wikipedia.org/wiki/HTTP_cookie 
+
+	String       : JSESSIONID
+
+[ Java ]
+	Java allows you to play online games, chat with people 
+	around the world, calculate your mortgage interest, and 
+	view images in 3D, just to name a few. It's also integral 
+	to the intranet applications and other e-business solutions 
+	that are the foundation of corporate computing. 
+
+	Website     : http://www.java.com/
+
+[ RedirectLocation ]
+	HTTP Server string location. used with http-status 301 and 
+	302 
+
+	String       : https://proxiad.desk-buddy.com/lobby (from location)
+
+[ Strict-Transport-Security ]
+	Strict-Transport-Security is an HTTP header that restricts 
+	a web browser from accessing a website without the security 
+	of the HTTPS protocol. 
+
+	String       : max-age=31536000 ; includeSubDomains
+
+[ UncommonHeaders ]
+	Uncommon HTTP server headers. The blacklist includes all 
+	the standard headers and many non standard but common ones. 
+	Interesting but fairly common headers should have their own 
+	plugins, eg. x-powered-by, server and x-aspnet-version. 
+	Info about headers can be found at www.http-stats.com 
+
+	String       : nel,x-content-type-options,content-security-policy,cf-cache-status,report-to,cf-ray,alt-svc (from headers)
+
+[ X-XSS-Protection ]
+	This plugin retrieves the X-XSS-Protection value from the 
+	HTTP header. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc288472%28VS.85%29.
+	aspx
+
+	String       : 0
+
+HTTP Headers:
+	HTTP/1.1 302 Found
+	Date: Tue, 28 Jul 2026 08:29:47 GMT
+	Content-Length: 0
+	Connection: close
+	Server: cloudflare
+	Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+	Set-Cookie: JSESSIONID=B248F95F230932FAE45881C62B8EE15F; Path=/; Secure; HttpOnly; SameSite=None
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 0
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+	Content-Security-Policy: frame-ancestors 'self' teams.microsoft.com *.teams.microsoft.com *.skype.com *.cloud.microsoft
+	Location: https://proxiad.desk-buddy.com/lobby
+	cf-cache-status: DYNAMIC
+	Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=IPy%2B9s%2FM6W%2B%2Fc92GtbcAt3By3PsX5Vf1ebCxDB4gz1wsljJIsv4zzpSnOxL4ngUyvXimS4SnYNyHJPMFKF0OWDUw8E81SRsd5NB8vKkZ%2BsAHRe7zkUqMYNrG6oSeD%2F4dM0dl1w%2B3XkRC"}]}
+	CF-RAY: a22284a46ef92ba5-SOF
+	alt-svc: h3=":443"; ma=86400
+	
+WhatWeb report for https://proxiad.desk-buddy.com/lobby
+Status    : 200 OK
+Title     : <None>
+IP        : 104.21.19.175
+Country   : UNITED STATES, US
+
+Summary   : HTML5, HTTPServer[cloudflare], Script[module], Strict-Transport-Security[max-age=31536000 ; includeSubDomains], UncommonHeaders[nel,report-to,x-content-type-options,content-security-policy,cf-cache-status,cf-ray,alt-svc], X-XSS-Protection[0]
+
+Detected Plugins:
+[ HTML5 ]
+	HTML version 5, detected by the doctype declaration 
+
+
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to 
+	identify the operating system from the server header. 
+
+	String       : cloudflare (from server string)
+
+[ Script ]
+	This plugin detects instances of script HTML elements and 
+	returns the script language/type. 
+
+	String       : module
+
+[ Strict-Transport-Security ]
+	Strict-Transport-Security is an HTTP header that restricts 
+	a web browser from accessing a website without the security 
+	of the HTTPS protocol. 
+
+	String       : max-age=31536000 ; includeSubDomains
+
+[ UncommonHeaders ]
+	Uncommon HTTP server headers. The blacklist includes all 
+	the standard headers and many non standard but common ones. 
+	Interesting but fairly common headers should have their own 
+	plugins, eg. x-powered-by, server and x-aspnet-version. 
+	Info about headers can be found at www.http-stats.com 
+
+	String       : nel,report-to,x-content-type-options,content-security-policy,cf-cache-status,cf-ray,alt-svc (from headers)
+
+[ X-XSS-Protection ]
+	This plugin retrieves the X-XSS-Protection value from the 
+	HTTP header. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc288472%28VS.85%29.
+	aspx
+
+	String       : 0
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Date: Tue, 28 Jul 2026 08:29:50 GMT
+	Content-Type: text/html
+	Transfer-Encoding: chunked
+	Connection: close
+	Server: cloudflare
+	Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+	Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dGjOj85ErsOSP6UpwKozgr5u25CuR9KVfw6Rk5lYRAxxZqJCCYcNSSQL8LEH1fbAO8GC31UPMifjaok04%2FZ2AxR8GfhAT2QnU0X0IeTMFI6rJtDnwQU3w8ojF4xaBYWXn92MzMAdYeZq"}]}
+	X-Content-Type-Options: nosniff
+	X-XSS-Protection: 0
+	Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+	Pragma: no-cache
+	Expires: 0
+	Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+	Content-Security-Policy: frame-ancestors 'self' teams.microsoft.com *.teams.microsoft.com *.skype.com *.cloud.microsoft
+	cf-cache-status: DYNAMIC
+	Content-Encoding: gzip
+	CF-RAY: a22284b92b403402-SOF
+	alt-svc: h3=":443"; ma=86400
+	

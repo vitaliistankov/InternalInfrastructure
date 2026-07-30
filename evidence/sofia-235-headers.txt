@@ -1,0 +1,19 @@
+HTTP/1.1 200 
+Server: nginx/1.30.2
+Date: Mon, 27 Jul 2026 09:10:55 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 2621
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Last-Modified: Mon, 22 Jun 2026 10:12:10 GMT
+Accept-Ranges: bytes
+Content-Language: en
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=()
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://kit-free.fontawesome.com; font-src 'self' data: https://fonts.gstatic.com https://kit-free.fontawesome.com; img-src 'self' data: blob:; connect-src 'self' https://login.microsoftonline.com https://*.microsoftonline.com; frame-ancestors 'self';
+

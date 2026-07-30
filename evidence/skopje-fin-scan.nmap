@@ -1,0 +1,36 @@
+# Nmap 7.99 scan initiated Mon Jul 27 12:21:42 2026 as: /usr/lib/nmap/nmap -sF -T4 -p80,443,22,3389,445,8080,8443,21,25,53,110,139 -oA evidence/skopje-fin-scan 45.156.140.97 45.156.140.99
+Nmap scan report for 45.156.140.97
+Host is up (0.031s latency).
+
+PORT     STATE         SERVICE
+21/tcp   open|filtered ftp
+22/tcp   open|filtered ssh
+25/tcp   open|filtered smtp
+53/tcp   open|filtered domain
+80/tcp   open|filtered http
+110/tcp  open|filtered pop3
+139/tcp  open|filtered netbios-ssn
+443/tcp  open|filtered https
+445/tcp  open|filtered microsoft-ds
+3389/tcp open|filtered ms-wbt-server
+8080/tcp open|filtered http-proxy
+8443/tcp open|filtered https-alt
+
+Nmap scan report for 45.156.140.99
+Host is up (0.031s latency).
+
+PORT     STATE         SERVICE
+21/tcp   open|filtered ftp
+22/tcp   open|filtered ssh
+25/tcp   open|filtered smtp
+53/tcp   open|filtered domain
+80/tcp   open|filtered http
+110/tcp  open|filtered pop3
+139/tcp  open|filtered netbios-ssn
+443/tcp  open|filtered https
+445/tcp  open|filtered microsoft-ds
+3389/tcp open|filtered ms-wbt-server
+8080/tcp open|filtered http-proxy
+8443/tcp open|filtered https-alt
+
+# Nmap done at Mon Jul 27 12:21:45 2026 -- 2 IP addresses (2 hosts up) scanned in 2.60 seconds

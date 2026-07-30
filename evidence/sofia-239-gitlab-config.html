@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html class="gl-system ui-neutral with-top-bar with-header page-theme-background page-with-panels with-gl-container-queries user-logged-out" lang="en">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<title>Instance Configuration · Help · GitLab</title>
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-9892dc17af892e03de41625c0ee325117a3b8ee4ba6005f3a3eac68510030aed.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-sans/GitLabSans-Italic-f96f17332d67b21ada2dfba5f0c0e1d5801eab99330472057bf18edd93d4ccf7.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-29c2152dac8739499dd0fe5cd37a486ebcc7d4798c9b6d3aeab65b3172375b05.woff2" rel="preload">
+<link as="font" crossorigin="" href="/assets/gitlab-mono/GitLabMono-Italic-af36701a2188df32a9dcea12e0424c380019698d4f76da9ad8ea2fd59432cf83.woff2" rel="preload">
+
+<script>
+//<![CDATA[
+window.gon={};
+//]]>
+</script>
+
+<script>
+//<![CDATA[
+const root = document.documentElement;
+if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  root.classList.add('gl-dark');
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+  if (e.matches) {
+    root.classList.add('gl-dark');
+  } else {
+    root.classList.remove('gl-dark');
+  }
+});
+
+//]]>
+</script>
+
+
+
+
+<meta content="light dark" name="color-scheme">
+<link rel="stylesheet" href="/assets/application-c0db9f6b5fa2a9075af366ea162e5ff09ac843d2acd9381b24b0edfdaf7d10c5.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/application_dark-c075ebb2a06d49adb535ed3b4289e0d0b168d8ce6baa93e171a166c586444e8e.css" media="(prefers-color-scheme: dark)" />
+<link rel="stylesheet" href="/assets/page_bundles/commit_description-9e7efe20f0cef17d0606edabfad0418e9eb224aaeaa2dae32c817060fa60abcc.css" /><link rel="stylesheet" href="/assets/page_bundles/work_items-9b3a7bc660bfe63384ce36523abc336295685aabd2afbfd8689610b7f607c656.css" /><link rel="stylesheet" href="/assets/page_bundles/notes_shared-1a99012f97ba760b6bc57563b5b2863243958d14d14a25fee12843f0268c2731.css" />
+<link rel="stylesheet" href="/assets/tailwind-ad93154e157cd2f99c20087ee19714a952eae5474bee8af8172a9e9c728928f7.css" />
+
+
+<link rel="stylesheet" href="/assets/fonts-deb7ad1d55ca77c0172d8538d53442af63604ff490c74acc2859db295c125bdb.css" />
+<link rel="stylesheet" href="/assets/highlight/themes/white-c3211f67c1e8d8cfb47de179b2da35275ab7865cdf299ab44b4a8cc52d5cafd3.css" media="(prefers-color-scheme: light)" />
+<link rel="stylesheet" href="/assets/highlight/themes/dark-8cae80594d7953b52bc449bf1b4f2de402c87cc39fffc7aa0187b5f881c0cfd7.css" media="(prefers-color-scheme: dark)" />
+
+<script src="/assets/webpack/runtime.7c006561.bundle.js" defer="defer"></script>
+<script src="/assets/webpack/main.8c172c31.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/tracker.1eb446cb.chunk.js" defer="defer"></script>
+<script>
+//<![CDATA[
+window.snowplowOptions = {"namespace":"gl","hostname":"ddr.proxiad.bg:443","postPath":"/-/collect_events","forceSecureTracker":true,"appId":"gitlab_sm"};
+gl = window.gl || {};
+gl.snowplowStandardContext = {"schema":"iglu:com.gitlab/gitlab_standard/jsonschema/1-1-8","data":{"environment":"self-managed","source":"gitlab-rails","correlation_id":"01KYHWKGGH00CWRPVR6DNG0438","extra":{},"user_id":null,"global_user_id":null,"user_type":null,"is_gitlab_team_member":null,"namespace_id":null,"ultimate_parent_namespace_id":null,"project_id":null,"feature_enabled_by_namespace_ids":null,"realm":"self-managed","deployment_type":"self-managed","context_generated_at":"2026-07-27T13:35:36.599Z","organization_id":1}};
+gl.snowplowPseudonymizedPageUrl = "https://82.103.125.239/help/instance_configuration";
+gl.maskedDefaultReferrerUrl = null;
+gl.ga4MeasurementId = 'G-ENFH3X7M5Y';
+gl.duoEvents = [];
+gl.onlySendDuoEvents = false;
+
+
+//]]>
+</script>
+
+
+
+<script src="/assets/webpack/commons-pages.admin.sessions-pages.ldap.omniauth_callbacks-pages.omniauth_callbacks-pages.sessions-p-b70d0ef8.62b3443a.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.dashboard.home-pages.registrations.new-pages.sessions.new-super_sidebar.afaf6003.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/0dcf7166.63feabc4.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/commons-pages.search.show-super_sidebar.00ec466b.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/super_sidebar.9e5b0840.chunk.js" defer="defer"></script>
+<script src="/assets/webpack/default.45e32006.chunk.js" defer="defer"></script>
+
+<meta content="object" property="og:type">
+<meta content="GitLab" property="og:site_name">
+<meta content="Instance Configuration · Help · GitLab" property="og:title">
+<meta content="GitLab Community Edition" property="og:description">
+<meta content="https://82.103.125.239/assets/twitter_card-570ddb06edf56a2312253c5872489847a0f385112ddbcd71ccfa1570febab5d2.jpg" property="og:image">
+<meta content="64" property="og:image:width">
+<meta content="64" property="og:image:height">
+<meta content="https://82.103.125.239/help/instance_configuration" property="og:url">
+<meta content="summary" property="twitter:card">
+<meta content="Instance Configuration · Help · GitLab" property="twitter:title">
+<meta content="GitLab Community Edition" property="twitter:description">
+<meta content="https://82.103.125.239/assets/twitter_card-570ddb06edf56a2312253c5872489847a0f385112ddbcd71ccfa1570febab5d2.jpg" property="twitter:image">
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="5zYcnOODmUqLKLaQ-muq2PL9QCeKUQ4o1apDKyr0lm7N5N9uklQt6LyEN2Ad79pdXW_EPF3_NkeOyWG4QOUsuw" />
+<meta name="csp-nonce" />
+<meta name="action-cable-url" content="/-/cable" />
+<link href="/-/manifest.json" rel="manifest">
+<link rel="icon" type="image/png" href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" id="favicon" data-original-href="/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png" />
+<link rel="apple-touch-icon" type="image/x-icon" href="/assets/apple-touch-icon-b049d4bc0dd9626f31db825d61880737befc7835982586d015bded10b4435460.png" />
+<link href="/search/opensearch.xml" rel="search" title="Search GitLab" type="application/opensearchdescription+xml">
+<meta content="noindex, nofollow" name="robots">
+
+
+
+
+<meta content="GitLab Community Edition" name="description">
+<meta content="#F1F0F6" media="(prefers-color-scheme: light)" name="theme-color">
+<meta content="#232128" media="(prefers-color-scheme: dark)" name="theme-color">
+</head>
+
+<body class="tab-width-8 gl-browser-generic gl-platform-other" data-page="help:instance_configuration">
+<div id="js-tooltips-container"></div>
+
+<script>
+//<![CDATA[
+gl = window.gl || {};
+gl.client = {"isGeneric":true,"isOther":true};
+
+
+//]]>
+</script>
+
+
+<header class="super-topbar js-super-topbar"></header>
+<div class="layout-page js-page-layout page-with-super-sidebar">
+<script>
+//<![CDATA[
+const outer = document.createElement('div');
+outer.style.visibility = 'hidden';
+outer.style.overflow = 'scroll';
+document.body.appendChild(outer);
+const inner = document.createElement('div');
+outer.appendChild(inner);
+const scrollbarWidth = outer.offsetWidth - inner.offsetWidth;
+outer.parentNode.removeChild(outer);
+document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+
+//]]>
+</script><aside class="js-super-sidebar super-sidebar super-sidebar-loading" data-command-palette="{}" data-is-saas="false" data-root-path="/" data-sidebar="{&quot;is_logged_in&quot;:false,&quot;compare_plans_url&quot;:&quot;https://about.gitlab.com/pricing&quot;,&quot;current_menu_items&quot;:[{&quot;id&quot;:&quot;projects_menu&quot;,&quot;title&quot;:&quot;Projects&quot;,&quot;icon&quot;:&quot;project&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/explore/projects&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[],&quot;separated&quot;:false},{&quot;id&quot;:&quot;groups_menu&quot;,&quot;title&quot;:&quot;Groups&quot;,&quot;icon&quot;:&quot;group&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/explore/groups&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[],&quot;separated&quot;:false},{&quot;id&quot;:&quot;catalog_menu&quot;,&quot;title&quot;:&quot;CI/CD Catalog&quot;,&quot;icon&quot;:&quot;catalog-checkmark&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/explore/catalog&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[],&quot;separated&quot;:false},{&quot;id&quot;:&quot;topics_menu&quot;,&quot;title&quot;:&quot;Topics&quot;,&quot;icon&quot;:&quot;labels&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/explore/projects/topics&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[],&quot;separated&quot;:false},{&quot;id&quot;:&quot;snippets_menu&quot;,&quot;title&quot;:&quot;Snippets&quot;,&quot;icon&quot;:&quot;snippet&quot;,&quot;avatar_shape&quot;:&quot;rect&quot;,&quot;link&quot;:&quot;/explore/snippets&quot;,&quot;is_active&quot;:false,&quot;items&quot;:[],&quot;separated&quot;:false}],&quot;current_context_header&quot;:&quot;Explore&quot;,&quot;university_path&quot;:&quot;https://university.gitlab.com&quot;,&quot;support_path&quot;:&quot;https://support.gitlab.com&quot;,&quot;docs_path&quot;:&quot;/help/docs&quot;,&quot;display_whats_new&quot;:false,&quot;show_version_check&quot;:null,&quot;search&quot;:{&quot;search_context&quot;:{&quot;for_snippets&quot;:null}},&quot;panel_type&quot;:null,&quot;shortcut_links&quot;:[{&quot;title&quot;:&quot;Snippets&quot;,&quot;href&quot;:&quot;/explore/snippets&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-snippets&quot;},{&quot;title&quot;:&quot;Groups&quot;,&quot;href&quot;:&quot;/explore/groups&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-groups&quot;},{&quot;title&quot;:&quot;Projects&quot;,&quot;href&quot;:&quot;/explore/projects&quot;,&quot;css_class&quot;:&quot;dashboard-shortcuts-projects&quot;}],&quot;terms&quot;:null,&quot;sign_in_visible&quot;:&quot;true&quot;,&quot;allow_signup&quot;:&quot;false&quot;}"></aside>
+
+<div class="broadcast-wrapper gl-rounded-lg gl-overflow-hidden">
+
+
+
+</div>
+<div class="panels-container gl-flex gl-gap-3">
+<div class="content-panels gl-flex-1 gl-w-full gl-flex gl-gap-3 gl-relative js-content-panels gl-@container/content-panels">
+<div class="paneled-view static-panel js-static-panel js-paneled-view content-wrapper">
+<div class="panel-header">
+<div class="panel-header-inner js-panel-header-inner">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Help","item":"https://82.103.125.239/help"},{"@type":"ListItem","position":2,"name":"Help","item":"https://82.103.125.239/help/instance_configuration"}]}
+
+
+</script>
+<div data-testid="breadcrumb-links" id="js-vue-page-breadcrumbs-wrapper">
+<div data-breadcrumbs-json="[{&quot;text&quot;:&quot;Help&quot;,&quot;href&quot;:&quot;/help&quot;,&quot;avatarPath&quot;:null},{&quot;text&quot;:&quot;Help&quot;,&quot;href&quot;:&quot;/help/instance_configuration&quot;,&quot;avatarPath&quot;:null}]" id="js-vue-page-breadcrumbs"></div>
+<div id="js-injected-page-breadcrumbs"></div>
+</div>
+<div id="js-page-breadcrumbs-extra"></div>
+
+
+
+<div class="panel-header-inner-actions">
+
+
+<div class="panel-header-inner-actions-portal-target js-panel-actions-portal-target"></div>
+</div>
+</div>
+</div>
+<div class="panel-content">
+<div class="panel-content-inner js-static-panel-inner">
+<div class="alert-wrapper alert-wrapper-top-space gl-flex gl-flex-col gl-gap-3 container-fluid container-limited">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="container-fluid container-limited ">
+<main class="content gl-pb-3 gl-@container/panel" id="content-body">
+<div id="js-drawer-container"></div>
+<div class="flash-container flash-container-page sticky" data-testid="flash-container">
+<div id="js-global-alerts"></div>
+</div>
+
+
+
+<div class="md gl-text-lg gl-mt-3">
+<h1>Instance Configuration</h1>
+<p>
+In this page you will find information about the settings that are used in your current instance.
+</p>
+
+
+
+
+
+
+
+<p>
+<strong>Table of contents</strong>
+<ul>
+<li>
+<a href="#ssh-host-keys-fingerprints">SSH host key fingerprints</a>
+</li>
+<li><a href="#gitlab-pages">GitLab Pages</a></li>
+<li><a href="#size-limits">Size Limits</a></li>
+<li><a href="#package-registry">Package registry</a></li>
+<li><a href="#rate-limits">Rate Limits</a></li>
+<li><a href="#files-api-rate-limits">Files API rate limits</a></li>
+<li><a href="#users-api-rate-limits">Users API rate limits</a></li>
+<li><a href="#groups-api-rate-limits">Groups API rate limits</a></li>
+<li><a href="#projects-api-rate-limits">Projects API rate limits</a></li>
+<li><a href="#ci-cd-limits">CI/CD limits</a></li>
+
+</ul>
+</p>
+<h2 id="ssh-host-keys-fingerprints">
+SSH host key fingerprints
+</h2>
+<p>
+Below are the fingerprints for the current instance SSH host keys.
+</p>
+<div class="table-responsive">
+<table>
+<thead>
+<tr>
+<th>
+Algorithm
+</th>
+<th>
+MD5
+</th>
+<th>
+SHA256
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ECDSA</td>
+<td>
+<code>47:d3:ed:76:d4:78:b4:c3:92:26:bb:25:ee:5f:23:69</code>
+</td>
+<td>
+<code>SHA256:qXAtJYTuxszx7gXQmupu1Y9Rq4RzlNKOrpxmSk3xfCA</code>
+</td>
+</tr>
+<tr>
+<td>ED25519</td>
+<td>
+<code>f5:36:4b:c3:b7:27:8a:20:22:f3:e5:bf:05:24:da:d1</code>
+</td>
+<td>
+<code>SHA256:ClhsYrs6tEYGVmuR30aWsbpKcjrjflkgTSRL1hklzzM</code>
+</td>
+</tr>
+<tr>
+<td>RSA</td>
+<td>
+<code>27:42:fb:0d:0b:8e:54:86:0e:94:2c:de:32:c0:8d:07</code>
+</td>
+<td>
+<code>SHA256:nWij00FqBUMgSNbsGcFLaRpjHKvboNOCXunihSSrn9Y</code>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="gitlab-pages">
+GitLab Pages
+</h2>
+<p>
+Below are the settings for <a target="_blank" rel="noopener noreferrer" href="http://example.com">GitLab Pages</a>.
+</p>
+<div class="table-responsive">
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Ddr.proxiad.bg</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Domain Name</td>
+<td>
+<code>example.com</code>
+</td>
+</tr>
+<tr>
+<td>IP Address</td>
+<td>
+<code>104.20.23.154</code>
+</td>
+</tr>
+<tr>
+<td>Port</td>
+<td>
+<code>80</code>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="size-limits">
+Size Limits
+</h2>
+<p>
+There are several size limits in place.
+</p>
+<div class="table-responsive"></div>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Ddr.proxiad.bg</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximum attachment size</td>
+<td>100 MiB</td>
+</tr>
+<tr>
+<td>Maximum push size</td>
+<td>85 MiB</td>
+</tr>
+<tr>
+<td>Maximum export size</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Maximum import size</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Maximum diff patch size</td>
+<td>200 KiB</td>
+</tr>
+<tr>
+<td>Maximum job artifact size</td>
+<td>100 MiB</td>
+</tr>
+<tr>
+<td>Maximum page size</td>
+<td>100 MiB</td>
+</tr>
+<tr>
+<td>Maximum snippet size</td>
+<td>50 MiB</td>
+</tr>
+<tr>
+<td>Maximum import remote file size (MiB)</td>
+<td>10 GiB</td>
+</tr>
+<tr>
+<td>Maximum download file size (MiB)</td>
+<td>5 GiB</td>
+</tr>
+</tbody>
+</table>
+<h2 id="package-registry">
+Package registry
+</h2>
+<p>
+There are several file size limits in place for the package registry.
+</p>
+<div class="table-responsive">
+<table>
+<thead>
+<tr>
+<th>Package type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conan</td>
+<td>3 GiB</td>
+</tr>
+<tr>
+<td>Helm</td>
+<td>5 MiB</td>
+</tr>
+<tr>
+<td>Maven</td>
+<td>3 GiB</td>
+</tr>
+<tr>
+<td>npm</td>
+<td>500 MiB</td>
+</tr>
+<tr>
+<td>NuGet</td>
+<td>500 MiB</td>
+</tr>
+<tr>
+<td>PyPI</td>
+<td>3 GiB</td>
+</tr>
+<tr>
+<td>Terraform Module</td>
+<td>1 GiB</td>
+</tr>
+<tr>
+<td>Generic</td>
+<td>5 GiB</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="rate-limits">
+Rate Limits
+</h2>
+<p>
+There are several rate limits in place to protect the system.
+</p>
+<div class="table-responsive">
+<table>
+<thead>
+<tr>
+<th>Rate limit</th>
+<th>Requests per period</th>
+<th>Period in seconds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unauthenticated requests</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+
+
+
+<tr>
+<td>Package registry: unauthenticated API requests</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tbody>
+</table>
+</div>
+<h2 id="files-api-rate-limits">Files API rate limits</h2>
+<p>
+Rate limits for Repository files API endpoints.
+<a href="/help/administration/settings/files_api_rate_limits.md">Learn more.</a>
+</p>
+<div class="table-responsive">
+<table>
+<thead>
+<tr>
+<th>Rate limit</th>
+<th>Requests per period</th>
+<th>Period in seconds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Repository files API (Unauthenticated)</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<h2 id="users-api-rate-limits">Users API rate limits</h2>
+<p>
+Rate limits for specific Users API endpoints.
+<a href="/help/administration/settings/rate_limit_on_users_api.md">Learn more.</a>
+</p>
+<div class="table-responsive">
+<table>
+<thead>
+<tr>
+<th>Rate limit</th>
+<th>Requests per period</th>
+<th>Period in seconds</th>
+</tr>
+</thead>
+<tbody>
+
+
+
+
+
+
+
+</tbody>
+</table>
+</div>
+<h2 id="groups-api-rate-limits">Groups API rate limits</h2>
+<p>
+Rate limits for specific Groups API endpoints.
+<a href="/help/administration/settings/rate_limit_on_groups_api.md">Learn more.</a>
+</p>
+<div class="table-responsive">
+<table>
+<thead>
+<tr>
+<th>Rate limit</th>
+<th>Requests per period</th>
+<th>Period in seconds</th>
+</tr>
+</thead>
+<tbody>
+
+
+
+
+
+
+</tbody>
+</table>
+</div>
+<h2 id="projects-api-rate-limits">Projects API rate limits</h2>
+<p>
+Rate limits for specific Projects API endpoints.
+<a href="/help/administration/settings/rate_limit_on_projects_api.md">Learn more.</a>
+</p>
+<div class="table-responsive">
+<table>
+<thead>
+<tr>
+<th>Rate limit</th>
+<th>Requests per period</th>
+<th>Period in seconds</th>
+</tr>
+</thead>
+<tbody>
+
+
+
+
+
+
+
+</tbody>
+</table>
+</div>
+<br>
+<h2 id="ci-cd-limits">
+CI/CD limits
+</h2>
+<p>
+There are several CI/CD limits in place.
+</p>
+<div class="table-responsive">
+<table>
+<thead>
+<tr>
+<th>Limit</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximum number of jobs in a single pipeline</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Total number of jobs in currently active pipelines</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Maximum number of pipeline subscriptions to and from a project</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Maximum number of pipeline schedules</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Maximum number of needs dependencies that a job can have</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Maximum number of runners created or active in a group during the past seven days</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>Maximum number of runners created or active in a project during the past seven days</td>
+<td>1000</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+
+
+</main>
+</div>
+
+
+</div>
+
+
+</div>
+</div>
+<div class="paneled-view-portal gl-@container/panel !gl-absolute gl-shadow-lg @xl/content-panels:gl-w-1/2 @xl/content-panels:gl-shadow-none @xl/content-panels:!gl-relative gl-right-0" id="contextual-panel-portal"></div>
+</div>
+</div>
+
+</div>
+
+
+<script>
+//<![CDATA[
+if ('loading' in HTMLImageElement.prototype) {
+  document.querySelectorAll('img.lazy').forEach(img => {
+    img.loading = 'lazy';
+    let imgUrl = img.dataset.src;
+    // Only adding width + height for avatars for now
+    if (imgUrl.indexOf('/avatar/') > -1 && imgUrl.indexOf('?') === -1) {
+      const targetWidth = img.getAttribute('width') || img.width;
+      imgUrl += `?width=${targetWidth}`;
+    }
+    img.src = imgUrl;
+    img.removeAttribute('data-src');
+    img.classList.remove('lazy');
+    img.classList.add('js-lazy-loaded');
+    img.dataset.testid = 'js-lazy-loaded-content';
+  });
+}
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+gl = window.gl || {};
+gl.experiments = {};
+
+
+//]]>
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,6 @@
+# Nmap 7.99 scan initiated Mon Jul 27 12:25:12 2026 as: /usr/lib/nmap/nmap -sS -sV -Pn -T4 -p80,443,22,21,25,53,110,139,445,3389,8080,8443 -oA evidence/plovdiv-service-scan 212.36.12.178 213.145.118.178
+Host: 212.36.12.178 ()	Status: Up
+Host: 212.36.12.178 ()	Ports: 21/filtered/tcp//ftp///, 22/filtered/tcp//ssh///, 25/filtered/tcp//smtp///, 53/filtered/tcp//domain///, 80/filtered/tcp//http///, 110/filtered/tcp//pop3///, 139/filtered/tcp//netbios-ssn///, 443/filtered/tcp//https///, 445/filtered/tcp//microsoft-ds///, 3389/filtered/tcp//ms-wbt-server///, 8080/filtered/tcp//http-proxy///, 8443/filtered/tcp//https-alt///
+Host: 213.145.118.178 ()	Status: Up
+Host: 213.145.118.178 ()	Ports: 21/filtered/tcp//ftp///, 22/filtered/tcp//ssh///, 25/filtered/tcp//smtp///, 53/filtered/tcp//domain///, 80/filtered/tcp//http///, 110/filtered/tcp//pop3///, 139/filtered/tcp//netbios-ssn///, 443/filtered/tcp//https///, 445/filtered/tcp//microsoft-ds///, 3389/filtered/tcp//ms-wbt-server///, 8080/filtered/tcp//http-proxy///, 8443/filtered/tcp//https-alt///
+# Nmap done at Mon Jul 27 12:25:16 2026 -- 2 IP addresses (2 hosts up) scanned in 4.80 seconds

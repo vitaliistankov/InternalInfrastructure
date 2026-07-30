@@ -1,0 +1,29 @@
+# Nmap 7.99 scan initiated Tue Jul 28 11:31:08 2026 as: /usr/lib/nmap/nmap -Pn -sV -T4 -p21,25,26,53,80,110,143,443,465,587,993,995,1022,2079,2080,2082,2083,2086,2087,2095,2096 -oA evidence/see-proxiad-service-v3 185.80.2.208
+Nmap scan report for host-185-80-2-208.superhosting.bg (185.80.2.208)
+Host is up.
+
+PORT     STATE    SERVICE       VERSION
+21/tcp   filtered ftp
+25/tcp   filtered smtp
+26/tcp   filtered rsftp
+53/tcp   filtered domain
+80/tcp   filtered http
+110/tcp  filtered pop3
+143/tcp  filtered imap
+443/tcp  filtered https
+465/tcp  filtered smtps
+587/tcp  filtered submission
+993/tcp  filtered imaps
+995/tcp  filtered pop3s
+1022/tcp filtered exp2
+2079/tcp filtered idware-router
+2080/tcp filtered autodesk-nlm
+2082/tcp filtered infowave
+2083/tcp filtered radsec
+2086/tcp filtered gnunet
+2087/tcp filtered eli
+2095/tcp filtered nbx-ser
+2096/tcp filtered nbx-dir
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 28 11:31:12 2026 -- 1 IP address (1 host up) scanned in 4.35 seconds

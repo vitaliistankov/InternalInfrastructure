@@ -1,0 +1,96 @@
+WhatWeb report for https://82.103.125.235
+Status    : 200 OK
+Title     : Grow@Proxiad
+IP        : 82.103.125.235
+Country   : BULGARIA, BG
+
+Summary   : Bootstrap[4.4.1], Content-Language[en], HTML5, HTTPServer[nginx/1.30.2], JQuery, nginx[1.30.2], Script, Strict-Transport-Security[max-age=31536000; includeSubDomains; preload], UncommonHeaders[x-content-type-options,referrer-policy,permissions-policy,content-security-policy], X-Frame-Options[SAMEORIGIN]
+
+Detected Plugins:
+[ Bootstrap ]
+	Bootstrap is an open source toolkit for developing with 
+	HTML, CSS, and JS. 
+
+	Version      : 4.4.1
+	Version      : 4.4.1
+	Website     : https://getbootstrap.com/
+
+[ Content-Language ]
+	Detect the content-language setting from the HTTP header. 
+
+	String       : en
+
+[ HTML5 ]
+	HTML version 5, detected by the doctype declaration 
+
+
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to 
+	identify the operating system from the server header. 
+
+	String       : nginx/1.30.2 (from server string)
+
+[ JQuery ]
+	A fast, concise, JavaScript that simplifies how to traverse 
+	HTML documents, handle events, perform animations, and add 
+	AJAX. 
+
+	Website     : http://jquery.com/
+
+[ Script ]
+	This plugin detects instances of script HTML elements and 
+	returns the script language/type. 
+
+
+[ Strict-Transport-Security ]
+	Strict-Transport-Security is an HTTP header that restricts 
+	a web browser from accessing a website without the security 
+	of the HTTPS protocol. 
+
+	String       : max-age=31536000; includeSubDomains; preload
+
+[ UncommonHeaders ]
+	Uncommon HTTP server headers. The blacklist includes all 
+	the standard headers and many non standard but common ones. 
+	Interesting but fairly common headers should have their own 
+	plugins, eg. x-powered-by, server and x-aspnet-version. 
+	Info about headers can be found at www.http-stats.com 
+
+	String       : x-content-type-options,referrer-policy,permissions-policy,content-security-policy (from headers)
+
+[ X-Frame-Options ]
+	This plugin retrieves the X-Frame-Options value from the 
+	HTTP header. - More Info: 
+	http://msdn.microsoft.com/en-us/library/cc288472%28VS.85%29.
+	aspx
+
+	String       : SAMEORIGIN
+
+[ nginx ]
+	Nginx (Engine-X) is a free, open-source, high-performance 
+	HTTP server and reverse proxy, as well as an IMAP/POP3 
+	proxy server. 
+
+	Version      : 1.30.2
+	Website     : http://nginx.net/
+
+HTTP Headers:
+	HTTP/1.1 200 
+	Server: nginx/1.30.2
+	Date: Mon, 27 Jul 2026 09:09:39 GMT
+	Content-Type: text/html;charset=UTF-8
+	Transfer-Encoding: chunked
+	Connection: close
+	Vary: Origin
+	Vary: Access-Control-Request-Method
+	Vary: Access-Control-Request-Headers
+	Last-Modified: Mon, 22 Jun 2026 10:12:10 GMT
+	Content-Language: en
+	Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+	X-Frame-Options: SAMEORIGIN
+	X-Content-Type-Options: nosniff
+	Referrer-Policy: strict-origin-when-cross-origin
+	Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=()
+	Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://kit-free.fontawesome.com; font-src 'self' data: https://fonts.gstatic.com https://kit-free.fontawesome.com; img-src 'self' data: blob:; connect-src 'self' https://login.microsoftonline.com https://*.microsoftonline.com; frame-ancestors 'self';
+	Content-Encoding: gzip
+	

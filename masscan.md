@@ -47,6 +47,24 @@ or use the discovered ports for targeted enumeration.
     --rate 1000 \
     -oL discovery.txt
 
+
+sudo masscan 82.103.125.0/24 \
+    -p80,443,22,21,25,53,110,139,445,3389,8080 \
+    --rate 1000 \
+    -oL discovery.txt
+
+sudo masscan 212.36.12.178/32 \
+    -p80,443,22,21,25,53,110,139,445,3389,8080 \
+    --rate 1000 \
+    -oL plovdiv-1-discovery.txt
+
+    sudo masscan 213.145.118.178/32 \
+    -p80,443,22,21,25,53,110,139,445,3389,8080 \
+    --rate 1000 \
+    -oL plovdiv-2-discovery.txt
+
+
+
 - Phase 2 — Validate with Nmap
 
 Example:
@@ -77,6 +95,12 @@ I would avoid maximum speed and use:
     --rate 1000 \
     --wait 10 \
     -oJ external_scan.json
+
+    sudo masscan 82.103.125.0/24 \
+    -p0-65535 \
+    --rate 1000 \
+    --wait 10 \
+    -oJ sofia-external_scan.json
 
 Options:
 

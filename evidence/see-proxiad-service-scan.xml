@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Tue Jul 28 10:15:30 2026 as: /usr/lib/nmap/nmap -sS -sV -sC -p21,25,26,53,80,110,143,443,465,587,993,995,1022,2079,2080,2082,2083,2086,2087,2095,2096 -T4 -oA evidence/see-proxiad-service-scan 185.80.2.208 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -sS -sV -sC -p21,25,26,53,80,110,143,443,465,587,993,995,1022,2079,2080,2082,2083,2086,2087,2095,2096 -T4 -oA evidence/see-proxiad-service-scan 185.80.2.208" start="1785222930" startstr="Tue Jul 28 10:15:30 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="21" services="21,25-26,53,80,110,143,443,465,587,993,995,1022,2079-2080,2082-2083,2086-2087,2095-2096"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="185.80.2.208" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>

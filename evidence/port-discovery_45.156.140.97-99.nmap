@@ -1,0 +1,13 @@
+# Nmap 7.99 scan initiated Tue Jul 21 11:38:32 2026 as: /usr/lib/nmap/nmap --privileged -sS -sV -T4 --top-ports 100 -oA /home/vstankov/SecurityProjects/Assessments/GlobalCompany/InternalInfrastructure/evidence/port-discovery_45.156.140.97-99 45.156.140.97 45.156.140.99
+Nmap scan report for 45.156.140.97
+Host is up (0.060s latency).
+All 100 scanned ports on 45.156.140.97 are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+
+Nmap scan report for 45.156.140.99
+Host is up (0.060s latency).
+All 100 scanned ports on 45.156.140.99 are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 21 11:38:46 2026 -- 2 IP addresses (2 hosts up) scanned in 13.99 seconds

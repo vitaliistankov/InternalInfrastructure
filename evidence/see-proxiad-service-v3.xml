@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Tue Jul 28 11:31:08 2026 as: /usr/lib/nmap/nmap -Pn -sV -T4 -p21,25,26,53,80,110,143,443,465,587,993,995,1022,2079,2080,2082,2083,2086,2087,2095,2096 -oA evidence/see-proxiad-service-v3 185.80.2.208 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -Pn -sV -T4 -p21,25,26,53,80,110,143,443,465,587,993,995,1022,2079,2080,2082,2083,2086,2087,2095,2096 -oA evidence/see-proxiad-service-v3 185.80.2.208" start="1785227468" startstr="Tue Jul 28 11:31:08 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="21" services="21,25-26,53,80,110,143,443,465,587,993,995,1022,2079-2080,2082-2083,2086-2087,2095-2096"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1785227468" endtime="1785227472"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="185.80.2.208" addrtype="ipv4"/>
+<hostnames>
+<hostname name="host-185-80-2-208.superhosting.bg" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="26"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rsftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="110"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="pop3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="143"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="imap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="465"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="smtps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="587"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="submission" method="table" conf="3"/></port>
+<port protocol="tcp" portid="993"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="imaps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="995"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="pop3s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1022"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="exp2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2079"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="idware-router" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2080"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="autodesk-nlm" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2082"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="infowave" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2083"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="radsec" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2086"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="gnunet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2087"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="eli" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2095"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="nbx-ser" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2096"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="nbx-dir" method="table" conf="3"/></port>
+</ports>
+</host>
+<runstats><finished time="1785227472" timestr="Tue Jul 28 11:31:12 2026" summary="Nmap done at Tue Jul 28 11:31:12 2026; 1 IP address (1 host up) scanned in 4.35 seconds" elapsed="4.35" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

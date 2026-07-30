@@ -1,0 +1,6 @@
+# Nmap 7.99 scan initiated Tue Jul 21 11:38:32 2026 as: /usr/lib/nmap/nmap --privileged -sS -sV -T4 --top-ports 100 -oA /home/vstankov/SecurityProjects/Assessments/GlobalCompany/InternalInfrastructure/evidence/port-discovery_45.156.140.97-99 45.156.140.97 45.156.140.99
+Host: 45.156.140.97 ()	Status: Up
+Host: 45.156.140.97 ()	Ports: 	Ignored State: filtered (100)
+Host: 45.156.140.99 ()	Status: Up
+Host: 45.156.140.99 ()	Ports: 	Ignored State: filtered (100)
+# Nmap done at Tue Jul 21 11:38:46 2026 -- 2 IP addresses (2 hosts up) scanned in 13.99 seconds

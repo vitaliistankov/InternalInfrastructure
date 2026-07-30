@@ -1,0 +1,1 @@
+# Nmap 7.99 scan initiated Tue Jul 28 10:30:54 2026 as: /usr/lib/nmap/nmap -sS -sV -sC -p21,25,26,53,80,110,143,443,465,587,993,995,1022,2079,2080,2082,2083,2086,2087,2095,2096 -T4 -oA evidence/see-proxiad-service-scan2 185.80.2.208

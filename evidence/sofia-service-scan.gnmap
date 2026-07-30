@@ -1,0 +1,6 @@
+# Nmap 7.99 scan initiated Mon Jul 27 12:08:07 2026 as: /usr/lib/nmap/nmap -sS -sV -sC -p 443 -T4 -oA evidence/sofia-service-scan 82.103.125.235 82.103.125.239
+Host: 82.103.125.235 ()	Status: Up
+Host: 82.103.125.235 ()	Ports: 443/open/tcp//ssl|http//nginx 1.30.2/
+Host: 82.103.125.239 ()	Status: Up
+Host: 82.103.125.239 ()	Ports: 443/open/tcp//ssl|http//nginx 1.28.3 (Ubuntu)/
+# Nmap done at Mon Jul 27 12:08:27 2026 -- 2 IP addresses (2 hosts up) scanned in 19.94 seconds
