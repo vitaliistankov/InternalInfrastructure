@@ -4,3 +4,6 @@
 *.swp
 *.bak
 .DS_Store
+# Pentest local artifacts
+paused.conf
+*.conf
